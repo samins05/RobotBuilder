@@ -1,0 +1,37 @@
+.images{
+    padding-top:100px;
+    text-align:center;
+}
+.controls{
+    font-size:25px;
+    text-align:center;
+    font-family:'Poppins',sans-serif;
+}
+
+button{
+height:30px;
+}
+
+img{
+    
+    width:10%;
+    height:200px;
+}
+
+img:hover{
+    cursor:grab;
+}
+
+#robot{
+    width:700px;
+    height:500px;
+}
+
+.mainrobot{
+    text-align:center;
+}
+
+body{
+    background-color:black;
+  color:white;
+}

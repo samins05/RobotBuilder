@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+<body onload="initialize();">
+    <div class="controls">
+    <div id="powerLevel">Power Level: 0</div>
+    <button onclick="add('pow');">+</button>
+    <button onclick="remove('pow');">-</button>
+    <div id="speed">Top Speed: 0</div>
+    <button onclick="add('spd');">+</button>
+    <button onclick="remove('spd');">-</button>
+    <div id="integrity">Structural Integrity: 0</div>
+    <button onclick="add('int');">+</button>
+    <button onclick="remove('int');">-</button><br>
+    <button id="toggleScan" onclick="toggleScanner();">Toggle Scanner</button><span id="scanner" >OFF</span><br>
+    <button id="toggleDefense" onclick="toggleDefense();">Toggle Defensive Systems</button><span id="defense">OFF</span>
+    <div id="powerType">Power Type: No Power Installed</div>
+    <button id="solar" onclick="toggle('s');">Toggle Solar</button><span id="solarDisplay">OFF</span><br>
+    <button id="hydro" onclick="toggle('h');">Toggle Hydro</button><span id="hydroDisplay">OFF</span><br>
+    <button id="nuclear" onclick="toggle('n');">Toggle Nuclear</button><span id="nuclearDisplay">OFF</span><br>
+    </div>
+    <div class="mainrobot">
+    <img id="robot" src="robotavatar.jpg"/>
+    </div>
+    <div class="images">
+    <img id="robot1" onclick="changeimg(1);" src="robot1.jpg"/>
+    <img id="robot2" onclick="changeimg(2);" src="robot2.jpg"/>
+    <img id="robot3" onclick="changeimg(3);" src="robot3.jpg"/>
+    <img id="robot4" onclick="changeimg(4);" src="robot4.jpg"/>
+    <img id="robot5" onclick="changeimg(5);" src="robot5.jpg"/>
+    </div>
+</body>
+</html>
